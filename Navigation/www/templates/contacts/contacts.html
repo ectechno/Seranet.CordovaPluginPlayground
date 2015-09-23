@@ -1,0 +1,15 @@
+<ion-view title="Contacts" ng-controller="ContactsController as vm">
+    <ion-content class="padding has-header">
+        <div class="card">
+            <div class="item item-divider">
+                All Contacts
+            </div>
+            <div class="item item-text-wrap" ng-repeat="contact in vm.allContacts">
+                <h3>{{contact.name.givenName}}</h3>
+                <div class="item item-text-wrap" ng-repeat="number in contact.phoneNumbers">
+                    <h4>{{number.type}} : {{number.value}}</h4>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

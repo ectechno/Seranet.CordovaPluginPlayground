@@ -1,0 +1,15 @@
+<ion-view title="Battery Status" ng-controller="BatteryController as vm">
+    <ion-content class="padding has-header">
+        <div class="card">
+            <div class="item item-divider">
+                Battery Status
+            </div>
+            <div class="item item-text-wrap">
+                <h3>Level : {{vm.level}}</h3>
+            </div>
+            <div class="item item-text-wrap">
+                <h3>Pluged In : {{vm.isPlugedIn}}</h3>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

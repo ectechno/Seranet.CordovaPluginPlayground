@@ -1,0 +1,21 @@
+<ion-view title="Device Info:" ng-controller="DeviceController as vm">
+    <ion-content class="padding has-header">
+        <div class="card">
+            <div class="item item-divider">
+                Device Info:
+            </div>
+           <div class="item item-text-wrap">
+                <h3>Model : {{vm.deviceModel}}</h3>
+            </div>
+            <div class="item item-text-wrap">
+                <h3>Platform : {{vm.devicePlatfrom}}</h3>
+            </div>
+            <div class="item item-text-wrap">
+                <h3>UUID : {{vm.deviceUUID}}</h3>
+            </div>
+            <div class="item item-text-wrap">
+                <h3>Version : {{vm.deviceVersion}}</h3>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

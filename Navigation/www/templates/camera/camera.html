@@ -1,0 +1,18 @@
+<ion-view title="Camera" ng-controller="CameraController as vm">
+    <ion-content class="padding has-header">
+        <div class="row">
+            <div class="col">
+                <button class="button button-block button-positive button-balanced" ng-click="vm.takePicture()">Take Picture</button>
+            </div>
+            <div class="col">
+                <button class="button button-block button-positive button-balanced" ng-click="vm.selectPicture()">Select Picture</button>
+            </div>
+        <div class="card">
+            <div class="item item-image">
+                <img ng-src = "{{vm.imageSrc}}" />
+            </div>
+        </div>
+
+        </div>
+    </ion-content>
+</ion-view>

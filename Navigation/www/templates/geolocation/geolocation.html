@@ -1,0 +1,17 @@
+<ion-view title="Geolocation" ng-controller="GeolocationController as vm">
+    <ion-content class="padding has-header">
+        <ul class="list" ng-show="vm.dataReceived">
+            <li class="item">
+                Latitude : {{vm.latitude}}
+            </li>
+
+            <li class="item">
+                Longitude :{{vm.longitude}}
+            </li>
+
+            <li class="item">
+                Accuracy : {{vm.accuracy}}
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
